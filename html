@@ -1,0 +1,135 @@
+<html>
+<head>
+  <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
+ <script src="https://unpkg.com/aframe-mirror-component/dist/aframe-mirror-component.min.js"></script>
+<script src="[location of repo's dist]/tilt-turn.js"></script>
+  <script src="https://unpkg.com/aframe-look-controls-z@^2.0.0/look-controls-z.js"></script>
+ <script src="https://unpkg.com/aframe-randomize-component@^0.3.0/aframe-randomize-component.js"></script>
+  <script src="https://unpkg.com/aframe-proxy-event-component/dist/aframe-proxy-event-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-mirror-component/dist/aframe-mirror-component.min.js"></script>
+  <script src="https://unpkg.com/super-hands@^3.0.1/dist/super-hands.min.js"></script>
+  
+  
+  
+  
+  
+ 
+
+</head>
+
+<body shadow="receive: true">
+  
+    
+  
+  
+  
+  
+  <a-scene fog="type: linear; color: #AAA" spectator="true" sharedspace avatars physics="gravity: -9; restitution: 0.7;" antialias="true">
+    <a-assets>
+      <img id="ground-grass" src="grass.jpg" />
+      
+      
+      
+      
+    </a-assets>
+    
+    <template>
+  <a-sphere radius="0.1" color=”#ff0000”></a-sphere>
+</template>
+    
+     
+    
+    
+    <a-entity oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
+<a-entity oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
+
+       
+    
+    <a-entity shadow="receive: true" camera spectator="true" universal-controls  kinematic-body="" class="collidable"
+      position="-6 1.6 30"
+              jump-ability="distance: 1.8;">
+   
+      
+      
+      
+    
+      
+      <a-entity geometry="primitive: box; height: 2; width: 2; rotation: 0 0 0; depth: 1.5" position="100 1.6 1"
+            material="color:red; shadow: receive:true; opacity: 1"></a-entity>
+      
+         <a-entity 
+cursor="rayOrigin: mouse; fuse: false; fuseTimeout: 50"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.015; radiusOuter: 0.02"
+            material="color: black; shader: flat">
+           <a-cursor fuse: false; fuseTimeout: 50 intersection-spawn="Event: ; mixin:voxel;"></a-cursor>
+           
+      </a-entity>
+      
+      </a-entity>
+     <a-entity environment="preset: goland">
+    <a-plane shadow="receive: true" color="white" width="600" height="600"  position="0 0 0" rotation="-90 0 0" static-body></a-plane>
+       
+      
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<img src="//placehold.it/1x5000"> <!-- Placeholder image to show issue -->
+<div class="circle">
+  <img src="http://static.tumblr.com/tensqk8/k8anq0438/01.png">
+</div>
+       <!--street-->
+       
+     
+       
+       <a-sky src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGPJLpkI0GVf3fAD1KFKbNRGWDsivHaIwhLwqv_mMtoDyoQM8XFiBBN81cxDO18-GAiZ4&usqp=CAU"></a-sky>
+       
+       
+       <a-entity onclick="gold()" id="gold">
+       
+       <a-cylinder static-body segments-radial="6" radius="0.5" color="#663300" position="0 1 0" height="5"></a-cylinder>
+       
+       <a-cone color="green" radius-bottom="3" radius-top="0" height="3" position="0 4.5 0"></a-cone>
+       
+       <a-cone color="green" radius-bottom="2.5" radius-top="0" height="3" position="0 6 0"></a-cone>
+       
+       <a-cone color="green" radius-bottom="2" radius-top="0" height="3" position="0 7.5 0"></a-cone>
+         
+         </a-entity>
+       
+       
+       
+       
+       
+       <a-entity position="5 0 0" onclick="gold2()" id="gol">
+       
+       <a-cylinder static-body segments-radial="6" radius="0.5" color="#663300" position="0 1 0" height="5"></a-cylinder>
+       
+       <a-cone color="green" radius-bottom="3" radius-top="0" height="3" position="0 4.5 0"></a-cone>
+       
+       <a-cone color="green" radius-bottom="2.5" radius-top="0" height="3" position="0 6 0"></a-cone>
+       
+       <a-cone color="green" radius-bottom="2" radius-top="0" height="3" position="0 7.5 0"></a-cone>
+         
+         </a-entity>
+       
+       
+       
+       
+       
+       
+       
+       
+       <a-cylinder color="brown" rotation="90 0 0" position="0 1 0" id="log"></a-cylinder>
+    
+       
+      
+  </a-scene>
+</body>
+<input type="text3" id="number3" value="0"/>
+  <input type="text4" id="number3" value="0"/>
+  <input type="text5" id="number3" value="0"/>
+  <input type="text6" id="number3" value="0"/>
+  
+</html>
+    
